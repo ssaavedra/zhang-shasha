@@ -1,0 +1,3 @@
+[submodule "sphinx-better-theme"]
+	path = sphinx-better-theme
+	url = https://github.com/irskep/sphinx-better-theme.git

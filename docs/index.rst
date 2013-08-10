@@ -5,7 +5,10 @@ The :py:mod:`zss` module provides a function (:py:func:`zss.distance`) that
 computes the edit distance between the two given trees, as well as a small set
 of utilities to make its use convenient.
 
-If you'd like to learn more about how it works, see :doc:`references`.
+If you'd like to learn more about how it works, see :doc:`references`. The
+algorithm has a time complexity of *O(nmdd′)*, where *n* and *m* are the
+numbers of nodes on the input trees, and *d* and *d′* are the depths of the
+input trees.
 
 Brought to you by Tim Henderson (tim.tadh@gmail.com) and Steve Johnson
 (steve@steveasleep.com).
@@ -13,8 +16,8 @@ Brought to you by Tim Henderson (tim.tadh@gmail.com) and Steve Johnson
 Installation
 ------------
 
-You can get :py:mod:`zss` and its soft requirements (
-:py:mod:`editdist` and :py:mod:`numpy` >= 1.7) from PyPI::
+You can get :py:mod:`zss` and its soft requirements (:py:mod:`editdist`
+and :py:mod:`numpy` >= 1.7) from PyPI::
 
     pip install zss
 

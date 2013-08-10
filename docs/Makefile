@@ -49,6 +49,10 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/*
 
+cp:
+	-rm -rf ~/Dropbox/Public/zss_docs
+	cp -r _build/html ~/Dropbox/Public/zss_docs
+
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
